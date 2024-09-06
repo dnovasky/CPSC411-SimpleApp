@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SimpleApp01</string>
+    <string name="title">My Simple App</string>
+    <string name="countText">0</string>
+    <string name="increase_btn_text">Increase</string>
+    <string name="decrease_btn_text">Decrease</string>
+</resources>
