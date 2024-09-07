@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var decreaseBtn: Button
     private lateinit var increaseBtn: Button
+    private lateinit var resetBtn: Button
     private lateinit var counterText: TextView
 
     private var currentCount = -99
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         decreaseBtn = findViewById(R.id.decrease_btn)
         increaseBtn = findViewById(R.id.increase_btn)
+        resetBtn = findViewById(R.id.reset_btn)
         counterText = findViewById(R.id.count_text)
 
         currentCount = counterText.text.toString().toInt()
@@ -30,6 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         increaseBtn.setOnClickListener {
             currentCount += 1
+            updateCountView()
+        }
+
+        resetBtn.setOnClickListener {
+            currentCount = 0
             updateCountView()
         }
     }
