@@ -4,4 +4,6 @@
     <string name="countText">0</string>
     <string name="increase_btn_text">Increase</string>
     <string name="decrease_btn_text">Decrease</string>
+    <string name="person_image_view_desc">Image of a person</string>
+    <string name="toggle_glasses">Toggle Glasses</string>
 </resources>
